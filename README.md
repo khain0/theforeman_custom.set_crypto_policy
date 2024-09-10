@@ -11,7 +11,7 @@ None
 Role Variables
 --------------
 
-var_system_crypto_policy - default is set to "DEFAULT:NO-SHA1"
+theforeman_custom_set_crypto_policy_var_system_crypto_policy - default is set to "DEFAULT:NO-SHA1"
 
 Dependencies
 ------------
@@ -34,4 +34,3 @@ GPL-2.0
 
 Author Information
 ------------------
-

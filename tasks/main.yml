@@ -3,7 +3,7 @@
   ansible.builtin.lineinfile:
     path: /etc/crypto-policies/config
     regexp: ^(?!#)(\S+)$
-    line: '{{ var_system_crypto_policy }}'
+    line: '{{ theforeman_custom_set_crypto_policy_var_system_crypto_policy }}'
     create: true
 
 - name: Configure System Cryptography Policy (runtime)
