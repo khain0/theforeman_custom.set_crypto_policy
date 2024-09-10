@@ -7,7 +7,7 @@
     create: true
 
 - name: Configure System Cryptography Policy (runtime)
-  ansible.builtin.command: /usr/bin/update-crypto-policies --set {{ var_system_crypto_policy }}
+  ansible.builtin.command: /usr/bin/update-crypto-policies --set {{ theforeman_custom.set_crypto_policy_var_system_crypto_policy }}
   register: result
   changed_when: result.rc == 0
   failed_when: result.rc != 0
